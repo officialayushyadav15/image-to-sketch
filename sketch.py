@@ -18,12 +18,11 @@ def convert(front, back):
     final[back == 255] = 255  # Preserve white areas
     return final.astype(np.uint8)
 
-# Optimized image processing pipeline
+
 s = imageio.imread(img)
 gray = rgb2gray(s).astype(np.uint8)
 i = 255 - gray
 
-# Use float32 for faster Gaussian filtering and memory efficiency
 blur = scipy.ndimage.gaussian_filter(i.astype(np.float32), sigma=30)
 
 r = convert(blur, gray)
