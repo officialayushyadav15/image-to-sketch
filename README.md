@@ -60,7 +60,7 @@ The image-to-sketch conversion follows these steps:
 ## 📸 Sample Output
 | Original Image | Sketch Output |
 |----------------|----------------|
-| ![Original](image.jpeg) | ![Sketch](final_sketch.jpeg) |
+| ![Original](image.jpg) | ![Sketch](final_sketch.jpeg) |
 
 ---
 
