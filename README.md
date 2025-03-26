@@ -58,7 +58,10 @@ python sketch.py
 ## 🎥 **Watch Artograph in Action!**
 Check out how the web interface works in this quick demo:
 
-![Artograph Demo](video/output.mp4)
+
+https://github.com/user-attachments/assets/db68628a-fc6b-4416-b5e8-c154da33f9d0
+
+
 
 ---
 
