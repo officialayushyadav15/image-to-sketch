@@ -1,108 +1,119 @@
-# 🖼️ Image to Sketch
+# 🎨 **Artograph: Image to Sketch Converter**
 
-This project converts an RGB image into a pencil sketch using a series of image processing techniques. The process includes grayscale conversion, negative image creation, Gaussian blur application, and color dodge blending to achieve the sketch effect.
-
----
-
-## 📚 Features
-- Converts any RGB image into a pencil sketch.
-- Smooth sketch effect with fine details.
-- Quick and efficient image processing using OpenCV and NumPy.
-- Saves the generated sketch as an output file.
+Artograph is a Python-powered project that converts any RGB image into a realistic pencil sketch using advanced image processing techniques. It now features a **web-based interface** to make the process easier and more accessible. 🚀
 
 ---
 
-## 🛠️ Technologies Used
-- Python 3.x
-- OpenCV
-- NumPy
-- Matplotlib (Optional, for visualization)
-
-
+## 📚 **Why Choose Artograph?**
+- 🖼️ **Instant Conversion:** Quickly transform your image into a high-quality pencil sketch.
+- 🌐 **Web-Based Interface:** No coding required! Simply upload your image and download the sketch.
+- 🎨 **Fine Details with Smooth Effects:** Gaussian blur and color dodge techniques ensure stunning results.
+- 💾 **Supports Multiple Formats:** Works with JPG, PNG, and JPEG files.
+- ⚡ **Fast and Lightweight:** Optimized performance using OpenCV and NumPy.
 
 ---
 
-## 🚀 Getting Started
-Follow these steps to run the project on your local machine:
+## 🚀 **How to Get Started**
+Ready to create stunning sketches? Follow these steps:
 
-### 1️⃣ Clone the Repository
+---
+
+### 1️⃣ **Clone the Repository**
 ```bash
-git clone https://github.com/officialayushyadav15/image_to_sketch.git
-cd image_to_sketch
+git clone https://github.com/officialayushyadav15/artograph.git
+cd artograph
 ```
 
-### 2️⃣ Install Dependencies
-Run the following command to install all required libraries:
+---
+
+### 2️⃣ **Install Required Libraries**
+Ensure all dependencies are installed by running:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Script
-Run the main Python script to convert the image to a sketch:
+---
+
+### 3️⃣ **Launch the Web Interface**
+Run the Flask application to open the web interface:
 ```bash
-python image_to_sketch.py
+python app.py
+```
+💡 Open your browser and go to:
+```
+http://127.0.0.1:5000
 ```
 
 ---
 
-## 📝 How It Works
-The image-to-sketch conversion follows these steps:
-
-1. **Load RGB Image:** Read the original image.
-2. **Convert to Grayscale:** Convert the image to grayscale for further processing.
-3. **Create Negative Image:** Invert the grayscale image to create a negative.
-4. **Apply Gaussian Blur:** Smooth the negative image using Gaussian blur.
-5. **Color Dodge Blending:** Combine the grayscale image with the blurred negative using color dodge to create the sketch effect.
-6. **Save Output:** Save the final sketch as `final_sketch.jpeg`.
+### 4️⃣ **Convert an Image via Script (Optional)**
+Prefer using the script instead of the web interface? Run:
+```bash
+python sketch.py
+```
+✅ The sketch will be saved as `final_sketch.jpeg` in the `/static/images/` folder.
 
 ---
 
-## 📸 Sample Output
-| Original Image | Sketch Output |
-|----------------|----------------|
+## 🎥 **Watch Artograph in Action!**
+Check out how the web interface works in this quick demo:
+
+![Artograph Demo](video/output.mp4)
+
+---
+
+## 📝 **How It Works**
+Here’s a breakdown of the image-to-sketch conversion process:
+
+1. 🎯 **Load RGB Image:** Reads the original image.
+2. ⚫ **Convert to Grayscale:** Converts the image to grayscale.
+3. 🔁 **Create Negative Image:** Inverts the grayscale to create a negative.
+4. 🌫️ **Apply Gaussian Blur:** Smooths the negative with Gaussian blur.
+5. 🎨 **Color Dodge Blending:** Combines the grayscale with the blurred negative to generate the sketch.
+6. 💾 **Save Output:** Saves the final sketch as `final_sketch.jpeg`.
+
+---
+
+## 🌐 **Web Interface Highlights**
+- 📤 **Upload Image:** Supports JPG, PNG, and JPEG.
+- 🎨 **Sketch Preview:** View your sketch instantly.
+- 📥 **Download Sketch:** Download the generated sketch with a single click.
+
+---
+
+## 📸 **Sample Output**
+| Original Image       | Sketch Output         |
+|---------------------|-----------------------|
 | ![Original](image.jpg) | ![Sketch](final_sketch.jpeg) |
 
 ---
 
-## 📄 Requirements
-Ensure that you have the following libraries installed:
-- OpenCV
-- NumPy
-- Matplotlib (Optional for visualization)
+## 🧩 **Customization Options**
+Make the sketch look just the way you want! 🎨
 
-If not already installed, run:
+- ✏️ **Change Input File:** Edit the image path in `sketch.py` or upload via the web interface.
+- 🌫️ **Adjust Blur Intensity:** Modify the Gaussian blur parameters to control the smoothness.
+- ⚡ **Tune Color Dodge Effect:** Fine-tune the blending values in the `convert()` function.
+
+---
+
+## ⚡️ **Troubleshooting Tips**
+Stuck? Check out these solutions:
+
+- 📝 **File Not Found:** Ensure the image path is correct.
+- 🔌 **Port Conflict:** If port `5000` is in use, change it in `app.py`:
+```python
+app.run(host='0.0.0.0', port=8080)
+```
+- 📦 **Dependency Issues:** Reinstall required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## ⚡ Usage
-- Place the input image in the `images` folder.
-- Modify the file name in `image_to_sketch.py` if required.
-- Run the script to generate the sketch.
-
----
-
-## 🧩 Customization
-- **Change Input File:** Edit the image path in the script.
-- **Adjust Blur Intensity:** Modify the Gaussian blur parameters to control the sketch’s smoothness.
-- **Tune Color Dodge Effect:** Adjust the blending to refine the sketch effect.
-
----
-
-## 🐞 Troubleshooting
-- Ensure that the image path is correct.
-- Check that all required dependencies are installed.
-
----
-
-## 📧 Contact
-Feel free to reach out for support or suggestions:
+## 📧 **Contact & Support**
+Got questions or suggestions? Reach out! 😊
 - GitHub: [officialayushyadav15](https://github.com/officialayushyadav15)
 
-
----
-
-✅ **Happy Sketching!** 🎨
 
